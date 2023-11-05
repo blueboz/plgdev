@@ -37,14 +37,12 @@ public class SimpleParser implements PsiParser, LightPsiParser {
 
   /* ********************************************************** */
   // property|COMMENT|CRLF
-  public static boolean item_(PsiBuilder b, int l) {
+  static boolean item_(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "item_")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, ITEM_, "<item>");
     r = property(b, l + 1);
     if (!r) r = consumeToken(b, COMMENT);
     if (!r) r = consumeToken(b, CRLF);
-    exit_section_(b, l, m, r, false, null);
     return r;
   }
 

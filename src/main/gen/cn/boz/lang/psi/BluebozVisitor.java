@@ -7,10 +7,6 @@ import com.intellij.psi.PsiElement;
 
 public class BluebozVisitor extends PsiElementVisitor {
 
-  public void visitItem_(@NotNull BluebozItem_ o) {
-    visitPsiElement(o);
-  }
-
   public void visitProperty(@NotNull BluebozProperty o) {
     visitPsiElement(o);
   }

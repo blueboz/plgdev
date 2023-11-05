@@ -6,13 +6,13 @@ import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+/**
+ * Token 类型
+ */
 public class BluebozTokenType extends IElementType {
 
-    public BluebozTokenType(@NonNls @NotNull String debugName, @Nullable Language language) {
-        super(debugName, language);
+    public BluebozTokenType(@NonNls @NotNull String debugName) {
+        super(debugName, BluebozLang.INSTANCE);
     }
 
-    protected BluebozTokenType(@NonNls @NotNull String debugName, @Nullable Language language, boolean register) {
-        super(debugName, language, register);
-    }
 }
