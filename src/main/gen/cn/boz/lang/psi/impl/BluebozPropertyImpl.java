@@ -8,7 +8,7 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.util.PsiTreeUtil;
 import static cn.boz.lang.psi.BluebozTypes.*;
-import cn.boz.lang.psi.ASTWrapperPsiElement;
+import com.intellij.extapi.psi.ASTWrapperPsiElement;;
 import cn.boz.lang.psi.*;
 
 public class BluebozPropertyImpl extends ASTWrapperPsiElement implements BluebozProperty {

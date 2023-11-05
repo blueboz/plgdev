@@ -1,7 +1,7 @@
 {
-  parserClass="cn.boz.lang.parser.SimpleParser"
+  parserClass="cn.boz.lang.parser.BluebozParser"
 
-  extends="cn.boz.lang.psi.ASTWrapperPsiElement"
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement;"
 
   psiClassPrefix="Blueboz"
   psiImplClassSuffix="Impl"

@@ -30,6 +30,9 @@
                   language="Blueboz"
                   extensions="blueboz"
         ></fileType>
+        <lang.parserDefinition
+                language="Blueboz"
+                implementationClass="cn.boz.lang.BluebozParserDefinition"/>
     </extensions>
 
 
