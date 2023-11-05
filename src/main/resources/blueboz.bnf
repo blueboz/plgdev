@@ -1,0 +1,20 @@
+{
+  parserClass="cn.boz.lang.parser.SimpleParser"
+
+  extends="cn.boz.lang.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="Blueboz"
+  psiImplClassSuffix="Impl"
+  psiPackage="cn.boz.lang.psi"
+  psiImplPackage="cn.boz.lang.psi.impl"
+
+  elementTypeHolderClass="cn.boz.lang.psi.BluebozTypes"
+  elementTypeClass="cn.boz.lang.psi.BluebozElementType"
+  tokenTypeClass="cn.boz.lang.psi.BluebozTokenType"
+}
+
+simpleFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY
