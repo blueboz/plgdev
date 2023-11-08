@@ -11,7 +11,7 @@ import cn.boz.lang.psi.BluebozTypes;
 import com.intellij.psi.TokenType;
 
 
-class BluebozLexer implements FlexLexer {
+public class BluebozLexer implements FlexLexer {
 
   /** This character denotes the end of file */
   public static final int YYEOF = -1;
@@ -284,7 +284,7 @@ class BluebozLexer implements FlexLexer {
    *
    * @param   in  the java.io.Reader to read input from.
    */
-  BluebozLexer(java.io.Reader in) {
+  public BluebozLexer(java.io.Reader in) {
     this.zzReader = in;
   }
 

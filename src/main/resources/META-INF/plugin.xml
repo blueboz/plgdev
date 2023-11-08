@@ -33,6 +33,12 @@
         <lang.parserDefinition
                 language="Blueboz"
                 implementationClass="cn.boz.lang.BluebozParserDefinition"/>
+
+        <!--新增语法高亮-->
+        <lang.syntaxHighlighterFactory language="Blueboz"
+                                       implementationClass="cn.boz.lang.highlight.BluebozSyntaxHighlighterFactory"></lang.syntaxHighlighterFactory>
+        <colorSettingsPage implementation="cn.boz.lang.highlight.BluebozColorSettingsPage"></colorSettingsPage>
+
     </extensions>
 
 

@@ -15,6 +15,7 @@ public interface BluebozTypes {
   IElementType COMMENT = new BluebozTokenType("COMMENT");
   IElementType CRLF = new BluebozTokenType("CRLF");
   IElementType KEY = new BluebozTokenType("KEY");
+
   IElementType SEPARATOR = new BluebozTokenType("SEPARATOR");
   IElementType VALUE = new BluebozTokenType("VALUE");
 

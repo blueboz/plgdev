@@ -11,6 +11,7 @@
   elementTypeHolderClass="cn.boz.lang.psi.BluebozTypes"
   elementTypeClass="cn.boz.lang.psi.BluebozElementType"
   tokenTypeClass="cn.boz.lang.psi.BluebozTokenType"
+  psiImplUtilClass="cn.boz.lang.BluebozPsiImplUtil"
 }
 
 simpleFile ::= item_*

@@ -68,8 +68,9 @@ public class BluebozLexer implements FlexLexer {
 
   private static final String ZZ_CMAP_BLOCKS_PACKED_0 =
     "\11\0\1\1\1\2\1\3\1\4\1\5\22\0\1\6"+
-    "\1\7\1\0\1\7\26\0\1\10\2\0\1\10\36\0"+
-    "\1\11\50\0\1\3\u01a2\0\2\3\326\0\u0100\12";
+    "\1\7\1\0\1\7\26\0\1\10\2\0\1\10\2\0"+
+    "\1\7\33\0\1\11\50\0\1\3\u01a2\0\2\3\326\0"+
+    "\u0100\12";
 
   private static int [] zzUnpackcmap_blocks() {
     int [] result = new int[1024];
