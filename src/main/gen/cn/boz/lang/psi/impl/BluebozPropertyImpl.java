@@ -8,12 +8,13 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.util.PsiTreeUtil;
 import static cn.boz.lang.psi.BluebozTypes.*;
-import com.intellij.extapi.psi.ASTWrapperPsiElement;;
+import com.intellij.extapi.psi.ASTWrapperPsiElement;
 import cn.boz.lang.psi.*;
+import cn.boz.lang.BluebozPsiImplUtil;
 
 public class BluebozPropertyImpl extends ASTWrapperPsiElement implements BluebozProperty {
 
-  public BluebozPropertyImpl(ASTNode node) {
+  public BluebozPropertyImpl(@NotNull ASTNode node) {
     super(node);
   }
 
@@ -25,6 +26,16 @@ public class BluebozPropertyImpl extends ASTWrapperPsiElement implements Blueboz
   public void accept(@NotNull PsiElementVisitor visitor) {
     if (visitor instanceof BluebozVisitor) accept((BluebozVisitor)visitor);
     else super.accept(visitor);
+  }
+
+  @Override
+  public String getKey() {
+    return BluebozPsiImplUtil.getKey(this);
+  }
+
+  @Override
+  public String getValue() {
+    return BluebozPsiImplUtil.getValue(this);
   }
 
 }
